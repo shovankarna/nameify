@@ -5,7 +5,7 @@ const nameUrl = 'https://www.namecheap.com/domains/registration/results/?domain=
 
 const NameCard = ({ suggestedName }) => {
     return (
-        <a target="_blank" className='card-link' href={`${nameUrl}${suggestedName}`}>
+        <a target="_blank" rel="noreferrer" className='card-link' href={`${nameUrl}${suggestedName}`}>
             <div className='result-name-card'>
                 <p className='result-name'>{suggestedName}</p>
             </div>
